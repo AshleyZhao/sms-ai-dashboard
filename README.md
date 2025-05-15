@@ -1,3 +1,73 @@
+# 🧠 AI-Powered SMS Marketing Dashboard
+
+A full-stack web application that enables e-commerce brands to generate, schedule, and analyze AI-personalized SMS campaigns. Built with React, FastAPI, and OpenAI.
+🚀 Features
+
+📝 AI SMS Generator: GPT-powered message generator tailored to customer and product data
+
+📊 Analytics Dashboard: Real-time charts to measure performance (CTR, open rate, etc.)
+
+🎯 Campaign Scheduling: Schedule and preview SMS messages
+
+🧪 A/B Testing: Compare different message variations
+
+🛍 Shopify Mock Integration: Simulated e-commerce data for campaigns
+
+## 🛠️ Tech Stack
+Layer	Stack
+Frontend	React.js, TypeScript, Tailwind CSS
+Backend	FastAPI (Python), PostgreSQL
+Auth	JWT (token-based), bcrypt
+AI	OpenAI GPT-4 (via API)
+Data Viz	Chart.js / Recharts
+Deployment	Render / Railway / Vercel
+📁 Project Structure
+```
+📦 sms-ai-dashboard/
+├── frontend/             # React + TypeScript UI
+├── backend/              # FastAPI server & AI logic
+│   ├── app/
+│   │   ├── main.py       # Entry point
+│   │   ├── auth/         # JWT-based auth
+│   │   ├── ai/           # OpenAI integration
+│   │   ├── routes/       # API routes
+│   │   └── models/       # DB models (SQLAlchemy)
+├── scripts/              # Mock data generators
+├── README.md
+```
+## 🧪 Local Development
+Backend (FastAPI)
+
+    cd backend
+    python -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    uvicorn app.main:app --reload
+
+Frontend (React)
+
+    cd frontend
+    npm install
+    npm run dev
+
+## 🤖 OpenAI Integration
+
+    Uses GPT-4 via the OpenAI API
+
+    Prompts include product names, customer segments, tone/style
+
+    Optional: add RAG to enhance context (e.g., using Pinecone or local vector DB)
+
+## 📦 Future Enhancements
+
+    ✅ Real Shopify API integration
+
+    ✅ Multi-user team support
+
+    ✅ SMS gateway integration (e.g., Twilio)
+
+--
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
