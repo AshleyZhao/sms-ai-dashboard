@@ -1,19 +1,19 @@
-🧠 AI-Powered SMS Marketing Dashboard
+# 🧠 AI-Powered SMS Marketing Dashboard
 
 A full-stack web application that enables e-commerce brands to generate, schedule, and analyze AI-personalized SMS campaigns. Built with React, FastAPI, and OpenAI.
 🚀 Features
 
-    📝 AI SMS Generator: GPT-powered message generator tailored to customer and product data
+📝 AI SMS Generator: GPT-powered message generator tailored to customer and product data
 
-    📊 Analytics Dashboard: Real-time charts to measure performance (CTR, open rate, etc.)
+📊 Analytics Dashboard: Real-time charts to measure performance (CTR, open rate, etc.)
 
-    🎯 Campaign Scheduling: Schedule and preview SMS messages
+🎯 Campaign Scheduling: Schedule and preview SMS messages
 
-    🧪 A/B Testing: Compare different message variations
+🧪 A/B Testing: Compare different message variations
 
-    🛍 Shopify Mock Integration: Simulated e-commerce data for campaigns
+🛍 Shopify Mock Integration: Simulated e-commerce data for campaigns
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 Layer	Stack
 Frontend	React.js, TypeScript, Tailwind CSS
 Backend	FastAPI (Python), PostgreSQL
@@ -35,28 +35,22 @@ Deployment	Render / Railway / Vercel
 ├── scripts/              # Mock data generators
 ├── README.md
 ```
-🧪 Local Development
+## 🧪 Local Development
 Backend (FastAPI)
 
-cd backend
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload
+    cd backend
+    python -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    uvicorn app.main:app --reload
 
 Frontend (React)
 
-cd frontend
-npm install
-npm run dev
+    cd frontend
+    npm install
+    npm run dev
 
-🔐 Authentication
-
-    Custom user registration & login using bcrypt-hashed passwords
-
-    JWT tokens stored in HTTP-only cookies for secure sessions
-
-🤖 OpenAI Integration
+## 🤖 OpenAI Integration
 
     Uses GPT-4 via the OpenAI API
 
@@ -64,7 +58,7 @@ npm run dev
 
     Optional: add RAG to enhance context (e.g., using Pinecone or local vector DB)
 
-📦 Future Enhancements
+## 📦 Future Enhancements
 
     ✅ Real Shopify API integration
 
