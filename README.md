@@ -22,7 +22,7 @@ AI	OpenAI GPT-4 (via API)
 Data Viz	Chart.js / Recharts
 Deployment	Render / Railway / Vercel
 📁 Project Structure
-
+```
 📦 sms-ai-dashboard/
 ├── frontend/             # React + TypeScript UI
 ├── backend/              # FastAPI server & AI logic
@@ -34,7 +34,7 @@ Deployment	Render / Railway / Vercel
 │   │   └── models/       # DB models (SQLAlchemy)
 ├── scripts/              # Mock data generators
 ├── README.md
-
+```
 🧪 Local Development
 Backend (FastAPI)
 
