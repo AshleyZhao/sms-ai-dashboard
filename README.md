@@ -41,7 +41,7 @@ Backend (FastAPI)
     python -m venv venv
     source venv/bin/activate # venv/Scripts/activate
     pip install -r requirements.txt
-    python uvicorn app.main:app --reload
+    python -m uvicorn app.main:app --reload
 
 Frontend (React)
 
