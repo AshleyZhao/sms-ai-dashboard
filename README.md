@@ -27,11 +27,10 @@ Deployment	Render / Railway / Vercel
 ├── frontend/             # React + TypeScript UI
 ├── backend/              # FastAPI server & AI logic
 │   ├── app/
-│   │   ├── main.py       # Entry point
-│   │   ├── auth/         # JWT-based auth
-│   │   ├── ai/           # OpenAI integration
-│   │   ├── routes/       # API routes
-│   │   └── models/       # DB models (SQLAlchemy)
+│   │   ├── api/           # OpenAI integration
+│   │   ├── routes/        # API routes
+│   │   └── models/        # DB models (SQLAlchemy)
+│   │   └── services/      # Services
 ├── scripts/              # Mock data generators
 ├── README.md
 ```
@@ -40,9 +39,9 @@ Backend (FastAPI)
 
     cd backend
     python -m venv venv
-    source venv/bin/activate
+    source venv/bin/activate # venv/Scripts/activate
     pip install -r requirements.txt
-    uvicorn app.main:app --reload
+    python -m uvicorn app.main:app --reload
 
 Frontend (React)
 
